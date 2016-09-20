@@ -16,14 +16,18 @@
 
     var oldParam = window.location.search;
     var switches = ["sap-ui-xx-componentPreload=off","sap-ushell-nocb=true","sap-language=ZF"];
+    var newSwitches = [];
     var newParam = "";
     if(oldParam !== ""){
        for(var i=0; i<switches.length; i++){
-           if(oldParam.indexOf(switches[i]) !== -1){
-               switches.splice(i, 1);
+           if(oldParam.indexOf(switches[i]) === -1){
+               newSwitches.push(switches[i]);
            }
        }
-       window.location.search = oldParam + "&" + switches.join("&");
+       if(newSwitches.length !== 0){
+           window.location.search = oldParam + "&" + newSwitches.join("&");
+       }
+       
     }else{
        window.location.search = "?" + switches.join("&");
     }
