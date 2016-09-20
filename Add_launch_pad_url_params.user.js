@@ -4,6 +4,7 @@
 // @version      0.1
 // @description  add cb language switcher params
 // @author       Dorian Li
+// @downloadURL  https://github.com/leedorian/userscripts/raw/master/Add_launch_pad_url_params.user.js
 // @match        http://qp2wdp.nanshan.com.tw:8888/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html
 // @match        http://dp2wdp.nanshan.com.tw:8888/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html
 // @match        https://agsdev02.mo.sap.corp:8443/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html
